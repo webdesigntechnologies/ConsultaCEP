@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsultaCEP.MainPage">
+    <StackLayout Padding="30" Spacing="30">
+        <StackLayout x:Name="LayoutSearch" IsVisible="True">
+            <Image x:Name="Logo" Source="Logo.png"/>
+            <Entry x:Name="Search" Placeholder="Digite seu CEP"/>
+            <Button Text="Buscar CEP" Clicked="Search_OnClicked"/>
+        </StackLayout>
+        <StackLayout x:Name="LayoutResult" IsVisible="False">
+            <Frame BorderColor="DimGray">
+                <StackLayout>
+                    <Button x:Name="BackButton" Text="Voltar" Clicked="BackButton_OnClicked"/>
+                    <Label>CEP:</Label>
+                    <Label x:Name="CEP"></Label>
+
+                    <Label>Logradouro:</Label>
+                    <Label x:Name="Logradouro"/>
+
+                    <Label>Complemento:</Label>
+                    <Label x:Name="Complemento"/>
+
+                    <Label>Bairro:</Label>
+                    <Label x:Name="Bairro"/>
+
+                    <Label>Localidade:</Label>
+                    <Label x:Name="Localidade"/>
+
+                    <Label>UF:</Label>
+                    <Label x:Name="UF"/>
+
+                    <Label>Unidade:</Label>
+                    <Label x:Name="Unidade"/>
+
+                    <Label>IBGE:</Label>
+                    <Label x:Name="IBGE"/>
+
+                    <Label>GIA:</Label>
+                    <Label x:Name="GIA"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
